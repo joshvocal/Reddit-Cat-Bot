@@ -5,6 +5,7 @@ import praw
 import time
 import sys
 import os
+import random
 
 
 # =============================================================================
@@ -14,7 +15,7 @@ import os
 def authenticate():
     print("Authenticating...")
 
-    # Try to successfully authenticate our bot, else exit.
+    # Try to successfully authenticate the bot, else exit.
     try:
         reddit = praw.Reddit(
             'SFU_Admission_Bot',
@@ -49,6 +50,7 @@ def run_bot(reddit, submissions_replied_to):
                 file.write(submission.id + "\n")
 
     # Sleep so we don't spam the subreddit we are commenting on.
+    WAIT_TIME_IN_SECONDS = random.randint(600, 1800)
     print("Sleeping for {} seconds.".format(WAIT_TIME_IN_SECONDS))
     time.sleep(WAIT_TIME_IN_SECONDS)
 
@@ -82,12 +84,11 @@ reddit = authenticate()
 USER_AGENT = "Cat Bot v-1.01"
 SUBREDDIT = "CatsStandingUp"
 SEARCH_LIMIT = 1
-WAIT_TIME_IN_SECONDS = 10
 SUBMISSION_POST_MESSAGE = "Cat."
 
-# ==============================================================================
+# =============================================================================
 # MAIN
-# ==============================================================================
+# =============================================================================
 
 if __name__ == '__main__':
     main()
