@@ -18,9 +18,18 @@ A reddit bot that comments "Cat." on the subreddit r/CatsStandingUp using [PRAW:
 
 ![Fill in the application credentials](https://github.com/joshvocal/Reddit-Cat-Bot/blob/master/screenshots/screenshot2.png)
 
+![Get your account information](https://github.com/joshvocal/Reddit-Cat-Bot/blob/master/screenshots/screenshot3.png)
+
 3. #### Fill in your account information
 
+* Enter your reddit account information, client id and client secret into the praw.ini file.
+
+![](https://github.com/joshvocal/Reddit-Cat-Bot/blob/master/screenshots/screenshot4.png)
+
 4. #### Run the script
+
+![](https://github.com/joshvocal/Reddit-Cat-Bot/blob/master/screenshots/screenshot5.png)
+
 
 
 
