@@ -18,7 +18,7 @@ def authenticate():
     # Try to successfully authenticate the bot, else exit.
     try:
         reddit = praw.Reddit(
-            'SFU_Admission_Bot',
+            'Reddit Cat Bot',
             user_agent="Cat Bot v-1.01")
         print("Authenticated as {}".format(reddit.user.me()))
     except Exception as e:
