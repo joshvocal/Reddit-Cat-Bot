@@ -14,6 +14,10 @@ A reddit bot that comments "Cat." on the subreddit r/CatsStandingUp using [PRAW:
 
 * Go to https://www.reddit.com/prefs/apps to create an app.
 
+![Initial reddit create an app page](https://github.com/joshvocal/Reddit-Cat-Bot/blob/master/screenshots/screenshot1.png)
+
+![Fill in the application credentials](https://github.com/joshvocal/Reddit-Cat-Bot/blob/master/screenshots/screenshot2.png)
+
 3. #### Fill in your account information
 
 4. #### Run the script
