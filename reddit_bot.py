@@ -50,7 +50,7 @@ def run_bot(reddit, submissions_replied_to):
                 file.write(submission.id + "\n")
 
     # Sleep so we don't spam the subreddit we are commenting on.
-    WAIT_TIME_IN_SECONDS = random.randint(600, 1800)
+    WAIT_TIME_IN_SECONDS = random.randint(420, 480)
     print("Sleeping for {} seconds.".format(WAIT_TIME_IN_SECONDS))
     time.sleep(WAIT_TIME_IN_SECONDS)
 
